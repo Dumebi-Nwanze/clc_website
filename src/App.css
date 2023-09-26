@@ -1,0 +1,54 @@
+.nav_link {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.nav_link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: #61c0bf;
+  transition: 0.5s ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav_link:hover {
+  font-weight: bolder;
+  color: #61c0bf;
+}
+
+.nav_link:hover::after {
+  transform: scaleX(1);
+}
+
+.cta_btn {
+  font-weight: 700;
+  font-size: larger;
+  padding: 12px 0px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #0047b3, #007bff);
+  transition: 0.2s ease-in-out;
+}
+
+.cta_btn:hover {
+  transform: scale(1.05);
+}
+
+.activeDot {
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  background: #4da1ff;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: white;
+}
