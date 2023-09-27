@@ -23,7 +23,9 @@ function HeroSlider() {
   let translateXValue = `-${currentIndex * 100}%`;
 
   return (
-    <div className="relative min-h-screen w-full h-full overflow-hidden snap-start">
+    <div
+    id="hero"
+     className="relative min-h-screen w-full h-full overflow-hidden snap-start">
       {/* <video
         autoPlay
         loop
@@ -32,7 +34,7 @@ function HeroSlider() {
         className="object-cover absolute top-0 left-0 w-full h-full"
         src="https://firebasestorage.googleapis.com/v0/b/linkedin-clone-4baf1.appspot.com/o/pexels_videos_1851190%20(1080p).mp4?alt=media&token=24cd61f6-f898-400d-ab8f-b51b013fb26a"
       ></video> */}
-      <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="" className="object-cover absolute top-0 left-0 w-full h-full" />
+      {/* <img src="/assets/team1.jpg" alt="" className="object-cover absolute top-0 left-0 w-full h-full" /> */}
       <div className="h-full w-full overflow-x-hidden absolute top-0 left-0 ">
         <div
           id="heroslides"
@@ -45,21 +47,22 @@ function HeroSlider() {
                   {
                     background: `url("${itm.img}")`,
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center",
+                    backgroundPosition: "center center",
     
                   }
                 }
               key={itm.id}
-              className="  min-w-full overflow-hidden text-white"
+              className="  min-w-full overflow-hidden text-white relative"
             >
+              <div className="absolute top-0 w-full h-full bg-black opacity-60"></div>
               <div 
                 
-              className="mt-20 pb-4 pl-4 lg:pb-12 lg:pl-12 flex flex-col justify-center space-y-10 w-full h-full ">
+              className="absolute top-0 mt-20 pb-4 pl-4 lg:pb-12 lg:pl-12 flex flex-col justify-center space-y-10 w-full h-full ">
                 <div className="lg:w-[50%]">
-                  <h1 className="font-medium lg:font-bold text-lg lg:text-6xl mb-4 lg:mb-8">
+                  <h1 className="font-bold  text-xl lg:text-6xl mb-4 lg:mb-8">
                     {itm.title}
                   </h1>
-                  <p className="font-light lg:font-bold text-sm lg:text-lg">
+                  <p className="font-light lg:font-normal text-sm lg:text-lg">
                     {itm.description}
                   </p>
                 </div>

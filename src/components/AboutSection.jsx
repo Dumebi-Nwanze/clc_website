@@ -15,18 +15,18 @@ function AboutSection() {
     delaySpeed: 2000,
   });
   return (
-    <div id="services" className="py-8 mt-16 snap-start">
-      <div className="pb-8  ">
+    <div  className="py-8 mt-16 ">
+      <div id="services" className="pb-8  ">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
           transition={{ duration: 0.8 }}
           variants={{
-            visible: { x: 0, opacity: 1, scale: 1 },
-            hidden: { x: -300, opacity: 0, scale: 0 },
+            visible: { x: 0, opacity: 1 },
+            hidden: { x: -300, opacity: 0 },
           }}
-          className="grid grid-cols-3 gap-8 px-20"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 md:px-20"
         >
           {
             services.map((itm)=>{
@@ -35,7 +35,7 @@ function AboutSection() {
           }
           
         </motion.div>
-        <div className="flex mt-16 px-24 space-x-12 overflow-hidden">
+        <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 mt-16 px-4 md:px-24 md:space-x-12 overflow-hidden">
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -48,7 +48,7 @@ function AboutSection() {
             className="flex-1"
           >
             <img
-              src="https://ascentree.org/ascentree/img/about.jpeg"
+              src="assets/team-meeting3.jpg"
               alt=""
               className="w-full h-full object-cover rounded-sm"
             />
@@ -60,25 +60,25 @@ function AboutSection() {
             transition={{ duration: 0.8 }}
             variants={{
               visible: { x: 0, opacity: 1 },
-              hidden: { x: 300, opacity: 0 },
+              hidden: { x: -60, opacity: 0 },
             }}
             className="flex-1 flex flex-col "
           >
             <div className="block mb-4">
-              <p className="text-white text-xs font-semibold bg-[#007BFF] p-2 rounded-full inline-block">
+              <p className="text-white text-xs font-semibold bg-secondary p-2 rounded-full inline-block">
                 Our Priorities
               </p>
             </div>
-            <div className="h-20">
-              <h2 className="text-2xl font-bold text-[#007BFF]">
+            <div className="h-20 ">
+              <h2 className="text-2xl font-bold text-[#FFD700]">
                 Our Priorities{" "}
-                <span className="mr-3 text-2xl font-bold text-[#0047B3]">
+                <span className="mr-3 text-2xl mb-4 font-bold text-secondary">
                   {text}
                 </span>
                 <Cursor />
               </h2>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-8">
               {
                 impact.map((itm)=> <Priorities title={itm.title} content={itm.description}/>)
               }
@@ -87,21 +87,11 @@ function AboutSection() {
           </motion.div>
         </div>
       </div>
-      <div className="flex ">
-        <div className="flex-1 flex flex-col space-y-20 px-8 overflow-hidden">
-          <motion.h1
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false }}
-            transition={{ duration: 0.8 }}
-            variants={{
-              visible: { y: 0, opacity: 1 },
-              hidden: { y: -100, opacity: 0 },
-            }}
-            className="text-3xl font-bold text-[#007BFF]"
-          >
-            About Us
-          </motion.h1>
+      <div
+      id="about"
+       className="flex flex-col md:flex-row items-start">
+        <div className="flex-1 flex flex-col px-8 overflow-hidden">
+          
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -113,7 +103,7 @@ function AboutSection() {
             }}
             className="flex flex-col space-y-5"
           >
-            <h2 className="text-2xl font-bold text-[#007BFF]">
+            <h2 className="text-2xl font-bold text-secondary">
               About us
             </h2>
             <p className="text-[#333]">
@@ -121,7 +111,7 @@ function AboutSection() {
 
 
             </p>
-            <h2 className="text-2xl font-bold text-[#007BFF]">
+            <h2 className="text-2xl font-bold text-secondary">
         Mission and Vision
             </h2>
             <p className="text-[#333]">
@@ -129,7 +119,7 @@ function AboutSection() {
 
 
             </p>
-            <h2 className="text-2xl font-bold text-[#007BFF]">
+            <h2 className="text-2xl font-bold text-secondary">
               Who we are
             </h2>
             <p className="text-[#333]">
@@ -137,7 +127,7 @@ function AboutSection() {
 
 
             </p>
-            <button className="cta_btn w-[180px] text-white">Learn More</button>
+            
           </motion.div>
         </div>
         <motion.div
@@ -149,11 +139,10 @@ function AboutSection() {
             visible: { x: 0, opacity: 1 },
             hidden: { x: -300, opacity: 0 },
           }}
-          className="flex-1 p-8"
+          className="flex-1 p-8 w-full"
         >
           <img
-            src="https://ascentree.org/ascentree/img/about-us.jpg"
-            alt=""
+            src="assets/team-meeting.jpg"
             className="w-full rounded-sm transition-all duration-200 ease-in-out hover:scale-105"
           />
         </motion.div>

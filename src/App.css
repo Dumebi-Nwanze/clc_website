@@ -32,18 +32,20 @@
   padding: 12px 0px;
   border-radius: 30px;
   background: linear-gradient(45deg, #0047b3, #007bff);
-  transition: 0.2s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .cta_btn:hover {
   transform: scale(1.05);
+  background-image: linear-gradient(to right, #FFD700, #FFA500);
+
 }
 
 .activeDot {
   width: 30px;
   height: 10px;
   border-radius: 10px;
-  background: #4da1ff;
+  background: #FFA500;
 }
 
 .dot {
