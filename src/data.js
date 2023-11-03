@@ -1,15 +1,15 @@
 import { HiAcademicCap, HiBriefcase, HiClock, HiGlobeAsiaAustralia, HiNewspaper, HiUserGroup } from "react-icons/hi2";
 
 export const navLinks = [
- 
+ {
+    navTitle: "Services",
+    scrollTo: "services",
+  },
   {
     navTitle: "About",
     scrollTo: "about",
   },
-  {
-    navTitle: "Services",
-    scrollTo: "services",
-  },
+  
   
   {
     navTitle: "Testimonials",
@@ -171,7 +171,7 @@ export const impact= [
   ];
 
 
-  export const testimonials = [
+  export const testimonial = [
     {
       name: "John Doe",
       testimony: "I had an amazing experience with this service. They helped me find my dream job, and I couldn't be happier.",
@@ -203,5 +203,60 @@ export const impact= [
       img: "/assets/person5.jpg",
     },
   ];
+
+  export const testimonials = [
+    {
+      name: "Joseph",
+      testimony: "CLC provided me with an incredible summer job opportunity, which helped me gain valuable experience.",
+      img: "/assets/guy1.jpg"
+    },
+    {
+      name: "Naomi",
+      testimony: "Thanks to CLC, I found a permanent role as a sales agent, which has been a turning point in my career.",
+      img: "/assets/girl1.jpg"
+    },
+    {
+      name: "Grace",
+      testimony: "CLC played a crucial role in helping me secure a permanent job in the tourism industry, which I absolutely love.",
+      img: "/assets/girl3.jpg"
+    },
+    {
+      name: "Ingrid",
+      testimony: "CLC's support led me to a fulfilling permanent job in events planning, and I'm grateful for the opportunities they provided.",
+      img: "/assets/girl2.jpg"
+    },
+    {
+      name: "Chris",
+      testimony: "CLC's assistance allowed me to become a dedicated Secretary in sports federations on a permanent basis, and I couldn't be happier.",
+      img: "/assets/guy5.jpg"
+    },
+    {
+      name: "Daniel",
+      testimony: "I'm grateful to CLC for the internship opportunity in an architectural and construction company, which has been a valuable learning experience.",
+      img: "/assets/guy2.jpg"
+    },
+    {
+      name: "Charity",
+      testimony: "CLC helped me make a difference as a study abroad agent, guiding students towards their dreams and aspirations.",
+      img: "/assets/girl4.jpg"
+    },
+    {
+      name: "Naomi",
+      testimony: "CLC's support led me to a permanent job in the thriving tourism sector, and I'm thankful for the opportunities they provided.",
+      img: "/assets/girl5.jpg"
+    },
+    {
+      name: "Micheal",
+      testimony: "CLC has been instrumental in my success as a permanent sales agent, and I'm thriving in my role with enthusiasm.",
+      img: "/assets/guy4.jpg"
+    },
+    {
+      name: "Tania",
+      testimony: "With a part-time job in the tourism industry, I can balance work and life, thanks to CLC's assistance.",
+      img: "/assets/girl6.jpg"
+    }
+  ];
+  
+  
   
   
