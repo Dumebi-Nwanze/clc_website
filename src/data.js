@@ -208,7 +208,7 @@ export const impact= [
     {
       name: "Joseph",
       testimony: "CLC provided me with an incredible summer job opportunity, which helped me gain valuable experience.",
-      img: "/assets/guy1.jpg"
+      img: "/assets/guy7.jpg"
     },
     {
       name: "Naomi",
@@ -231,7 +231,7 @@ export const impact= [
       img: "/assets/guy5.jpg"
     },
     {
-      name: "Daniel",
+      name: "Benit",
       testimony: "I'm grateful to CLC for the internship opportunity in an architectural and construction company, which has been a valuable learning experience.",
       img: "/assets/guy2.jpg"
     },
